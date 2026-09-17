@@ -1,4 +1,5 @@
 import './Header.css';
+import withLogger from '../../hoc/withLogger';
 
 const Header = () => {
   return (
@@ -12,4 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withLogger(Header, 'Header');
