@@ -1,7 +1,8 @@
-import type { Post } from '../../types/Post';
+import type { Post as PostType } from '../../types/Post';
+import Post from '../Post/Post';
 
 const PostList = () => {
-  const posts: Post[] = [
+  const posts: PostType[] = [
     {
       id: 1,
       title: 'Building Better Communities in Tech',
@@ -33,12 +34,7 @@ const PostList = () => {
       <h2>Latest Posts</h2>
 
       {posts.map((post) => (
-        <article key={post.id}>
-          <h3>{post.title}</h3>
-          <p>{post.author}</p>
-          <p>{post.content.split(' ').slice(0, 12).join(' ')}...</p>
-          <p>{post.date}</p>
-        </article>
+        <Post key={post.id} post={post} />
       ))}
     </section>
   );
