@@ -6,7 +6,7 @@ const PostList = () => {
     {
       id: 1,
       title: 'Building Better Communities in Tech',
-      author: 'Fiyin Akin-Oladiran',
+      author: 'Victor Akin-Oladiran',
       content:
         'Strong communities help technology products grow by creating spaces where users can learn, share ideas, and support one another.',
       date: 'September 15, 2026',
