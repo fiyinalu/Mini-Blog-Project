@@ -1,3 +1,4 @@
+import './PostList.css';
 import type { Post as PostType } from '../../types/Post';
 import Post from '../Post/Post';
 
@@ -30,8 +31,8 @@ const PostList = () => {
   ];
 
   return (
-    <section>
-      <h2>Latest Posts</h2>
+    <section className="post-list">
+      <h2 className="post-list-title">Latest Posts</h2>
 
       {posts.map((post) => (
         <Post key={post.id} post={post} />

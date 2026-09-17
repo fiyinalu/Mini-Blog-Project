@@ -1,0 +1,9 @@
+.post-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.post-list-title {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+}
